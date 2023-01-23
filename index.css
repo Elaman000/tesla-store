@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    }
+    .car{
+        margin: auto;
+        width: 75vw;
+        height: 60vh;
+        background-image: url(img/car\ white.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .red{
+        animation-name: car-red;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: alternate;
+        animation-fill-mode: forwards;
+    }
+    @keyframes car-red {
+        0%{
+
+        }
+        100%{
+            background-image: url(img/car\ red.jpg);
+        }
+    }
+    .black{
+        animation-name: car-black;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: alternate;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes car-black {
+        0%{
+        }
+        100%{
+            background-image: url(img/car\ black.jpg);
+        }
+    }
+    .white{
+        animation-name: car-white;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: alternate;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes car-white {
+        0%{
+        }
+        100%{
+            background-image: url(img/car\ white.jpg);
+        }
+    }
+    .grey{
+        animation-name: car-grey;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: alternate;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes car-grey {
+        0%{
+        }
+        100%{
+            background-image: url(img/car\ seryi.jpg);
+        }
+    }
+    .blue{
+        animation-name: car-blue;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-duration: alternate;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes car-blue {
+        0%{
+            
+        }
+        100%{
+            background-image: url(img/car\ blue.jpg);
+        }
+    }
+
+    .color{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .color{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .color img{
+        width: 75px;
+        height: 75px;
+    }
+    .color h1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .img{
+        border-bottom: 4px solid rgb(75, 75, 75);
+        box-shadow: 0 0 10px black;
+        border-radius: 50%;
+    }
