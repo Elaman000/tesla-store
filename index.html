@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        padding: 0px;
+        margin: 0px;
+        }
+        .car{
+            margin: auto;
+            width: 75vw;
+            height: 60vh;
+            background-image: url(img/car\ white.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .red{
+            animation-name: car-red;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: alternate;
+            animation-fill-mode: forwards;
+        }
+        @keyframes car-red {
+            0%{
+
+            }
+            100%{
+                background-image: url(img/car\ red.jpg);
+            }
+        }
+        .black{
+            animation-name: car-black;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes car-black {
+            0%{
+            }
+            100%{
+                background-image: url(img/car\ black.jpg);
+            }
+        }
+        .white{
+            animation-name: car-white;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes car-white {
+            0%{
+            }
+            100%{
+                background-image: url(img/car\ white.jpg);
+            }
+        }
+        .grey{
+            animation-name: car-grey;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes car-grey {
+            0%{
+            }
+            100%{
+                background-image: url(img/car\ seryi.jpg);
+            }
+        }
+        .blue{
+            animation-name: car-blue;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: alternate;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes car-blue {
+            0%{
+                
+            }
+            100%{
+                background-image: url(img/car\ blue.jpg);
+            }
+        }
+
+        .color{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        .color{
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .color img{
+            width: 75px;
+            height: 75px;
+        }
+        .color h1{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .img{
+            border-bottom: 4px solid rgb(98, 255, 0);
+            box-shadow: 0 0 10px black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="car " id="carr">
+    </div>
+    <div class="color">
+        <img src="img/Group 6.png" class="" id="btn_red" alt="">
+        <h1></h1>
+        <img src="img/Group 7.png" class="" id="btn_black" alt="">
+        <h1></h1>
+        <img src="img/Group 8.png" class="" id="btn_blue" alt="">
+        <h1></h1>
+        <img src="img/Group 9.png" class="" id="btn_grey" alt="">
+        <h1></h1>
+        <img src="img/Group 10.png" class="" id="btn_white" alt="">
+    </div>
+    <script>
+        var car = document.getElementById('carr')
+        btn_red.onclick = red
+        function red() {
+            btn_red.classList.add('img')
+            btn_black.classList.remove('img')
+            btn_blue.classList.remove('img')
+            btn_grey.classList.remove('img')
+            btn_white.classList.remove('img')
+
+            carr.classList.add('red')
+            carr.classList.remove('blue')
+            carr.classList.remove('black')
+            carr.classList.remove('grey')
+            carr.classList.remove('white')
+            setTimeout(()=>{
+                car.style.backgroundImage = "url('img/car\ red.jpg')";
+            },900)
+        }
+        btn_black.onclick = black
+        function black() {
+            btn_red.classList.remove('img')
+            btn_black.classList.add('img')
+            btn_blue.classList.remove('img')
+            btn_grey.classList.remove('img')
+            btn_white.classList.remove('img')
+            
+            carr.classList.add('black')
+            carr.classList.remove('blue')
+            carr.classList.remove('red')
+            carr.classList.remove('grey')
+            carr.classList.remove('white')
+            setTimeout(()=>{
+                car.style.backgroundImage = "url('img/car\ black.jpg')";
+            },900)
+        }
+        btn_blue.onclick = blue
+        function blue() {
+            btn_red.classList.remove('img')
+            btn_black.classList.remove('img')
+            btn_blue.classList.add('img')
+            btn_grey.classList.remove('img')
+            btn_white.classList.remove('img')
+
+            carr.classList.add('blue')
+            carr.classList.remove('red')
+            carr.classList.remove('black')
+            carr.classList.remove('grey')
+            carr.classList.remove('white')
+            setTimeout(()=>{
+                car.style.backgroundImage = "url('img/car\ blue.jpg')";
+            },900)
+        }
+        btn_grey.onclick = grey
+        function grey() {
+            btn_red.classList.remove('img')
+            btn_black.classList.remove('img')
+            btn_blue.classList.remove('img')
+            btn_grey.classList.add('img')
+            btn_white.classList.remove('img')
+
+            carr.classList.add('grey')
+            carr.classList.remove('blue')
+            carr.classList.remove('red')
+            carr.classList.remove('black')
+            carr.classList.remove('white')
+            setTimeout(()=>{
+                car.style.backgroundImage = "url('img/car\ seryi.jpg')";
+            },900)
+        }
+        btn_white.onclick = white
+        function white() {
+            btn_red.classList.remove('img')
+            btn_black.classList.remove('img')
+            btn_blue.classList.remove('img')
+            btn_grey.classList.remove('img')
+            btn_white.classList.add('img')
+
+            carr.classList.add('white')
+            carr.classList.remove('blue')
+            carr.classList.remove('red')
+            carr.classList.remove('black')
+            carr.classList.remove('grey')
+            setTimeout(()=>{
+                car.style.backgroundImage = "url('img/car\ white.jpg')";
+            },900)
+        }
+    </script>
+</body>
+</html>
